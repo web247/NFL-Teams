@@ -1,0 +1,6 @@
+nfl_teams.settings:
+  title: 'NFL Teams Settings'
+  description: 'Settings For NFL Teams'
+  parent: system.admin_config_services
+  route_name: nfl_teams.settings
+  weight: 100

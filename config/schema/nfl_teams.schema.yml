@@ -1,0 +1,10 @@
+nfl_teams.settings:
+  type: config_object
+  label: "NFL Teams Settings"
+  mapping:
+    api_key:
+      type: string
+      label: "Api Key"
+    rows_per_page:
+      type: int
+      label: "Rows per page"

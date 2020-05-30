@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ */
+
+/**
+ * Implements hook_cron().
+ */
+function nfl_teams_cron() {
+  $service = \Drupal::service('nfl_teams_client');
+  $cid = $service->getCid();
+  \Drupal::cache()->delete($cid);
+}

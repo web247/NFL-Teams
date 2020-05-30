@@ -1,0 +1,9 @@
+services:
+  nfl_teams_client:
+    class: Drupal\nfl_teams\NflTeamsClient
+    arguments:
+      - '@http_client_factory'
+      - '@config.factory'
+      - '@language_manager'
+      - '@cache.default'
+      - '@logger.factory'
