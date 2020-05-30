@@ -12,16 +12,15 @@ CONTENTS OF THIS FILE
 INTRODUCTION
 ------------
 
-NFL Teams module is listing the teams using the Json API from here:
+NFL Teams module is listing the teams using the JSON API from here:
 http://delivery.chalk247.com/team_list/NFL.JSON?api_key=74db8efa2a6db279393b433d97c2bc843f8e32b0
 
-* The teams are display in a sortable table on a custom page:
-  /nfl-teams
+* The teams are displayed in a sortable table on a custom page: /nfl-teams
 
 * To make sure there are no performance issues, the page is cached.
 
-* On execution of the cron or on clear cache, the system is loading the
-  data again from the Json API feed.
+* On execution of the cron jobs or on clear cache, the system is loading the
+  data again from the JSON API feed.
 
 * Everytime the page is loaded, the system logs the source of the data for the table:
   * if the data is loaded from cache or
